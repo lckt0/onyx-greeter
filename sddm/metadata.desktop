@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=Onyx
+Description=True-black greeter matched to the Plasma lock screen
+Author=lckt0
+Copyright=(c) 2026 lckt0
+License=LGPL-2.0-or-later
+Type=sddm-theme
+Version=1.0
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=onyx
+Theme-API=2.0
+QtVersion=6
+Website=https://github.com/lckt0/onyx-greeter
