@@ -27,10 +27,9 @@ Kilit ekranındaki parola kutusu ve düğmeler Plasma'nın kendi bileşenleri ol
 kalır: onları değiştirmek ayrı bir Plasma kabuk paketi gerektirir ve onyx bunu
 yapmaz.
 
-> **Uyumluluk:** Plasma 6.7 için yazıldı. Plasma 6.8,
-> `org.kde.breeze.components` içinde `sddm/Main.qml` dosyasının hâlâ kullandığı
-> `VirtualKeyboardLoader` bileşenini artık içermiyor; bu yüzden giriş ekranı
-> 6.8'de henüz yüklenmiyor (SDDM bu durumda kendi yerleşik temasına döner).
+> **Uyumluluk:** Plasma 6.7 ve 6.8 ile çalışır. Ekran klavyesi 6.7'de Qt
+> Virtual Keyboard'dan, 6.8'de KWin'den gelir; Plasma'nın kendi Breeze giriş
+> ekranı da her sürümde aynı yolu izler.
 
 ## Kurulum
 

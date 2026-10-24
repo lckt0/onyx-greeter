@@ -274,9 +274,10 @@ Item {
             }
         }
 
-        VirtualKeyboardLoader {
+        OnScreenKeyboard {
             id: inputPanel
 
+            anchors.fill: parent
             z: 1
 
             screenRoot: root
@@ -351,11 +352,8 @@ Item {
 
                 text: "Virtual Keyboard"
                 icon.name: inputPanel.keyboardActive ? "input-keyboard-virtual-on" : "input-keyboard-virtual-off"
-                visible: inputPanel.status === Loader.Ready
-                onClicked: {
-                    userListComponent.mainPasswordBox.forceActiveFocus();
-                    inputPanel.showHide();
-                }
+                visible: inputPanel.available
+                onClicked: inputPanel.showHide()
 
                 Layout.fillHeight: true
             }

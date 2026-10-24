@@ -26,10 +26,9 @@ caption.
 The lock screen's password box and buttons stay Plasma's own: replacing them
 would require a different Plasma shell package, which onyx does not do.
 
-> **Compatibility:** written for Plasma 6.7. Plasma 6.8 no longer ships
-> `VirtualKeyboardLoader` in `org.kde.breeze.components`, which `sddm/Main.qml`
-> still uses, so the login screen does not load on 6.8 yet (SDDM then falls
-> back to its built-in theme).
+> **Compatibility:** works on Plasma 6.7 and 6.8. The on-screen keyboard
+> comes from Qt Virtual Keyboard on 6.7 and from KWin on 6.8, the same way
+> Plasma's own Breeze login screen does it on each version.
 
 ## Installation
 
